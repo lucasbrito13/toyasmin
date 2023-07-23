@@ -12,12 +12,14 @@
 
         .painel{
             margin: auto;
-            width: 500px;
+            min-width: 300px;
+            max-width: 800px;
             height: 500px;
             background-color: white;
             border-radius: 15px;
             text-align: center;
-            padding-top: 50px;
+            padding-top: 40px;
+            padding-bottom: 40px;
             font-family: cursive, sans-serif;
         }
 
@@ -43,30 +45,29 @@
 
         }
 
-        div {
-            min-width: 300px;
-            max-width: 800px;
-            margin: auto;
-            margin-bottom: 30px;
-            padding: 20px;
+        .painel > img {
+            width: 250px;
         }
+    
     </style>
 </head>
 <body>
-
-    <div class="painel">
-
-        <img src="https://gifman.net/wp-content/uploads/2019/06/ursinho-fofo-apaixonado.gif" alt="">
-        
-        <h3>Yasmin Nunes, aceita namorar comigo?</h3>
-
-        <a href="https://youtu.be/sEhOY55CSng" target="_blank"><button id="sim" > Sim! </button></a>
-        <button onmouseover="fuja()" id="nao"> Não! </button>
-
+<main>
     
-
-    </div>
+        <div class="painel">
     
+            <img src="imagens/ursinho-fofo-apaixonado.gif" alt="">
+    
+            <h3>Yasmin Nunes, aceita namorar comigo?</h3>
+    
+            <a href="https://youtu.be/sEhOY55CSng" target="_blank"><button id="sim" > Sim! </button></a>
+            <button onmouseover="fuja()" id="nao"> Não! </button>
+    
+    
+    
+        </div>
+    
+</main>
     <script>
 
         function fuja(){
