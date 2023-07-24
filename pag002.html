@@ -40,6 +40,14 @@
             display: inline-block;
         }
 
+        #play{
+            text-align: center;
+            height: 75px;
+            width: 100px;    
+        }
+
+        audio::-webkit-media-controls-timeline { display:inline-flex;}
+        audio::-webkit-media-controls-panel {background-color: red}
     </style>
 </head>
 <body>
@@ -52,7 +60,7 @@
             <p>Eu não estava procurando nada quando te conheci. Na verdade, não planejava me apaixonar por alguém tão cedo, mas foi exatamente o que aconteceu. Acho que as coisas simplesmente aconteceram; encontrei você e, lentamente, me vi querendo passar mais tempo ao seu lado. Foi simples, foi fácil, e acredito que é assim que os melhores relacionamentos começam. Você não está procurando por nada, e de repente aparece algo que muda tudo!</p>
 
             <img src="imagens/ursinhos-fofos-coracoes.gif" alt="">
-            <div>
+            <div id="play">
                 <audio controls="controls" autoplay="autoplay">
                     <source src="audios/Djonga - Leal-mp3.mp3" type="audio/mpeg">
                     <source src="audios/Djonga-Leal-wav.wav" type="audio/wav">
