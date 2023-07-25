@@ -12,6 +12,14 @@
             margin: 0px;
         }
 
+        main{
+            height: 450px;
+        }
+
+        a.externo::after{
+            content: '\00A0\1F517';
+        }
+
         div > h3 {
             padding: 15px;
             text-align: center;
@@ -21,12 +29,13 @@
             margin: auto;
             min-width: 300px;
             max-width: 800px;
-            height: 500px;
+            height: 410px;
             background-color: white;
-            border-radius: 15px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
             text-align: center;
-            padding-top: 40px;
-            padding-bottom: 40px;
+            padding-top: 20px;
+            padding-bottom: 20px;
             font-family: cursive, sans-serif;
         }
 
@@ -55,6 +64,28 @@
         .painel > img {
             width: 250px;
         }
+
+        
+        footer{
+            background-color: rgb(255, 255, 255);
+            color: black;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 0.8em;
+            padding: 5px;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+
+        footer a {
+            color: red;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        footer a:hover{
+            text-decoration: underline;
+        }
     
     </style>
 </head>
@@ -75,6 +106,10 @@
         </div>
     
 </main>
+
+<footer>
+    <p>Desenvolvido por <a href="https://www.instagram.com/lcxinformatica/" target="_blank" class="externo">LCX</a></p>
+</footer>
     <script>
 
         function fuja(){
